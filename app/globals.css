@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* Replace bg-darkBg with bg-[#111827] and text-lightText with text-[#F3F4F6] to avoid unknown utility classes */
+  @apply bg-[#111827] text-[#F3F4F6];
+  overflow-x: hidden; /* Prevent horizontal scroll issues with animations */
+}
+
+/* Custom scrollbar for a more elegant feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #2d3748; /* Darker track */
+}
+::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Lighter thumb */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* Hover effect for thumb */
+}
